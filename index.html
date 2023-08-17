@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Of Colorado</title>
+</head>
+<body>
+  <form action="/register/">
+  <h1>Marathon Registration</h1>
+  <img src="https://img.freepik.com/free-vector/marathon-race_52683-10624.jpg?w=826&t=st=1692291355~exp=1692291955~hmac=b4ef7278dae97e6d47251cd5629f534e8c879ce93ac66d49ee1a0c8f60bf6de3>
 
+    <label for="fname">First Name</label>
+    <input type="text" placeholder="John" id="fname" name="fname"></input>
+    <label for="lname">Last Name</label>
+    <input type="text" placeholder="Doe" id="lname" name="lname"></input>
+    <div id="race_selection">
+      <h3>Select your race</h3>
+      <input type="radio" name="race" id="half_marathon"></input>
+      <label for="half_marathon">Half Marathon</label><br>
+      <input type="radio" name="race" id="full_marathon"></input>
+      <label for="full_marathon">Full Marathon</label>
+    </div>
+    <div>
+      <label for="username">Username</label>
+      <input type="text"  id="username" name="username"></input>
+      <label for="password">Password</label>
+      <input type="password"  id="password" name="password"></input>
+    </div>
+    <div>                                   
+      <label for="ccn">Credit Card Number</label>
+      <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" name="credit_card_number"></input>
+      <label for="ccn_exp">Expiration</label>
+      <input type"tel" id="ccn_exp" placeholder="MM/YY" name="expiration"></input>
+   </div>
+   <button>Register</button>                                                    
+
+               
+  </form>
+</body>
+</html>
